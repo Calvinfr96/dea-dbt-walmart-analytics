@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: public
+    database: walmart_db
+    schema: public
+    tables:
+      - name: date_dim
+      - name: store_dim
+      - name: sale_fact
