@@ -39,3 +39,10 @@ models:
   walmart_analytics:
     staging:
       +materialized: view
+
+vars:
+  db_name: "WALMART_DB"
+  schema_name: "PUBLIC"
+  stage_name: "WALMART_DB.PUBLIC.S3_FACTS_STAGE"
+  file_format_csv: "WALMART_DB.PUBLIC.MY_CSV_FORMAT"
+  purge_status: "false"
