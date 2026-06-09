@@ -7,3 +7,4 @@ sources:
     tables:
       - name: departments_tgt
       - name: stores_tgt
+      - name: facts_source
