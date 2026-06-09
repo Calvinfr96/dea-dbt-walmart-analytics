@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('public', 'date_dim') }}
+    select * from {{ source('public', 'departments_tgt') }}
 
 ),
 
@@ -13,7 +13,9 @@ renamed as (
         dept as dept_id,
         date,
         weekly_sales,
-        isholiday as is_holiday
+        isholiday as is_holiday,
+        insert_dts,
+        update_dts
 
     from source
 
